@@ -1,0 +1,4 @@
+# Method other than GET -> 405
+00 15 01 01 00 00 00 01                          # len 21, HEADERS, END_STREAM, stream 1
+01 00 04 50 4f 53 54                             # [1] :method "POST"
+02 00 0b 2f 69 6e 64 65 78 2e 68 74 6d 6c        # [2] :path "/index.html"

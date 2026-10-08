@@ -1,0 +1,7 @@
+# A hand-made response (not from wserve) with an unknown frame first.
+# wcurl MUST skip it and print "hello\n".
+00 03 7f 00 00 00 00 01 61 62 63                 # len 3, type 0x7f, stream 1, "abc"
+00 0a 01 00 00 00 00 01                          # len 10, HEADERS, flags 0, stream 1
+06 00 03 32 30 30                                # [6] :status "200"
+08 00 01 36                                      # [8] content-length "6"
+00 06 00 01 00 00 00 01 68 65 6c 6c 6f 0a        # len 6, DATA, END_STREAM, "hello\n"

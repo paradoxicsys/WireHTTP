@@ -1,0 +1,7 @@
+# SPEC §6 worked example: GET /index.html from localhost:9000 (61 bytes)
+00 35 01 01 00 00 00 01                          # len 53, HEADERS, END_STREAM, stream 1
+01 00 03 47 45 54                                # [1] :method "GET"
+02 00 0b 2f 69 6e 64 65 78 2e 68 74 6d 6c        # [2] :path "/index.html"
+03 00 0e 6c 6f 63 61 6c 68 6f 73 74 3a 39 30 30 30   # [3] :authority "localhost:9000"
+04 00 07 77 63 75 72 6c 2f 31                    # [4] user-agent "wcurl/1"
+05 00 03 2a 2f 2a                                # [5] accept "*/*"

@@ -1,0 +1,5 @@
+# A frame type nobody knows (0x7f), then a normal request. Server MUST skip the first.
+00 05 7f 00 00 00 00 01 68 65 6c 6c 6f           # len 5, type 0x7f, stream 1, "hello"
+00 14 01 01 00 00 00 01                          # len 20, HEADERS, END_STREAM, stream 1
+01 00 03 47 45 54                                # [1] :method "GET"
+02 00 0b 2f 69 6e 64 65 78 2e 68 74 6d 6c        # [2] :path "/index.html"

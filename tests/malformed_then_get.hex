@@ -1,0 +1,7 @@
+# A header block whose value runs past the end (-> 400), then a good request on the
+# SAME connection (-> 200). Proves the connection stays open after a 400.
+00 04 01 01 00 00 00 01                          # len 4, HEADERS, END_STREAM, stream 1
+01 00 09 47                                      # [1] :method, ValueLen 9 but only 1 byte left
+00 14 01 01 00 00 00 02                          # len 20, HEADERS, END_STREAM, stream 2
+01 00 03 47 45 54                                # [1] :method "GET"
+02 00 0b 2f 69 6e 64 65 78 2e 68 74 6d 6c        # [2] :path "/index.html"

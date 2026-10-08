@@ -1,0 +1,4 @@
+# Request HEADERS without END_STREAM -> 400
+00 14 01 00 00 00 00 01                          # len 20, HEADERS, flags 0, stream 1
+01 00 03 47 45 54                                # [1] :method "GET"
+02 00 0b 2f 69 6e 64 65 78 2e 68 74 6d 6c        # [2] :path "/index.html"

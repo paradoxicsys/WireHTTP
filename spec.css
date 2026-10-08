@@ -1,0 +1,12 @@
+@page { size: A4; margin: 13mm 14mm; }
+body  { font: 9.6pt/1.33 "DejaVu Sans", Arial, sans-serif; color: #000; }
+h1    { font-size: 15pt; margin: 0 0 2pt; }
+h2    { font-size: 11pt; margin: 7pt 0 2pt; border-bottom: 1px solid #999; }
+p, ul { margin: 3pt 0; }
+li    { margin: 0; }
+table { font-size: inherit; border-collapse: collapse; margin: 3pt 0; width: 100%; }
+th, td { border: 1px solid #aaa; padding: 1.5pt 4pt; vertical-align: top; text-align: left; }
+th    { background: #eee; }
+code  { font: 8.6pt "DejaVu Sans Mono", monospace; }
+pre   { font: 8.3pt/1.25 "DejaVu Sans Mono", monospace; margin: 3pt 0; padding: 3pt 5pt; background: #f4f4f4; border: 1px solid #ccc; }
+pre code { font: inherit; }

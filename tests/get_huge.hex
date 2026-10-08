@@ -1,0 +1,4 @@
+# GET /huge.bin (a 20 MB file the test script creates), for the SIGPIPE test
+00 12 01 01 00 00 00 01                          # len 18, HEADERS, END_STREAM, stream 1
+01 00 03 47 45 54                                # [1] :method "GET"
+02 00 09 2f 68 75 67 65 2e 62 69 6e              # [2] :path "/huge.bin"

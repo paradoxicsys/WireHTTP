@@ -1,0 +1,2 @@
+# A client sending a DATA frame -> 400
+00 02 00 01 00 00 00 01 68 69                    # len 2, DATA, END_STREAM, stream 1, "hi"
